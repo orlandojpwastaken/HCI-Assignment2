@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI ASSIGNMENT-02</title>
+    <link rel="icon" type="image/x-icon" href="comp.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <h1> Orlando's Computer Repairs</h1>
+    <h3> Hardware and Software Diagnosis and Repair</h3>
+</head>
+<hr/><br><br>
+<body>
+    <div id="intro">
+        <p>
+            Welcome to Orlando's Computer Repair Shop.<br> We offer a wide range of services from hardware diagnosis, software installation & repair and computer maintenance.</p> By filling this form, you are aware that:
+        </p>
+        <ul id="list1">
+            <li>you will be sending your desktop or laptop to our workshop to have a problem diagnosed, repaired or both.</li>
+            <li>the risks of your device suffering damages during the delivery process and that we cannot be held responsible<br>for any damages done by third-parties.</li>
+        </ul>
+    </div><br><br>
+    <form action="index2.html">
+        <div id="form">
+            <fieldset id="personal">
+                <legend style="font-size: 25px; text-align: center; padding:10px">Personal Information:</legend>
+                First Name &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;:&nbsp;&nbsp;<input type="text" id="name1" name="name1" required><br><br>
+                Last Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;<input type="text" id="name2" name="name2" required><br><br>
+                Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;:&nbsp;&nbsp; <input type="text" id="add" name="add" required><br><br>
+                Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;:&nbsp;&nbsp;<input type="email" id="email" name="email" required><br><br>
+                Phone Number &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;<input type="tel" id="phonenum" name="phonenum" required><br><br>
+            </fieldset>
+        </div>
+        <div id="form">
+            <br><br><br>
+            <fieldset id="services">
+                <legend style="font-size: 25px; text-align: center; padding:10px">Services:</legend>
+                <p style="font-size: 20px"> Type of Device:</p>
+                <input type="radio" id="desktop" name="device" required><label for="desktop">Desktop</label>
+                <input type="radio" id="laptop" name="device" required> <label for="laptop">Laptop </label> <br><br>       
+                <p style="font-size: 20px">Device Delivery Date: </p>
+                <input type="date" id="deliver" name="deliver" required><br>
+                <p> Note: Please refer to the calendar below for the days where we accept deliveries.</p><br>
+                <div id="calendar">
+                    <table>
+
+                        <tr>
+                        <th colspan="7">October 2023</th>
+                        </tr>
+
+                        <tr>
+                            <td style="color: red;">Sun</td>
+                            <td>Mon</td>
+                            <td>Tues</td>
+                            <td>Wed</td>
+                            <td>Thurs</td>
+                            <td>Fri</td>
+                            <td>Sat</td>
+                            </tr>
+
+                        <tr>
+                        <td style="color: red;">1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td rowspan="4" style="color: red;">Holiday</td>
+                        </tr>
+                        
+                        <tr>
+                        <td style="color: red;">8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        </tr>
+                        
+                        <tr>
+                        <td style="color: red;">15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        </tr>
+                        
+                        <tr>
+                        <td style="color: red;">22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        </tr>
+                        
+                        <tr>
+                        <td style="color: red;">29</td>
+                        <td colspan="2" style="color: red;">Holiday</td>
+                        </tr>
+                        
+                    </table>    
+                </div>
+                    <p style="font-size: 20px">Service Type:</p>
+                    <div id="servicelist" class="row">
+                        <div class="column">
+                            <P style="font-size: 20px">Hardware:</P>
+                            <input type="checkbox" id="s1" value="s1"><label for="s1">Diagnosis</label><br>
+                            <input type="checkbox" id="s2" value="s2"><label for="s2">Installation</label><br>
+                            <input type="checkbox" id="s3" value="s3"><label for="s3">Replacement</label><br>
+                            <input type="checkbox" id="s4" value="s4"><label for="s4">Repair</label><br>
+                            <input type="checkbox" id="s5" value="s5"><label for="s5">Maintenance</label>
+                            <br><br>
+                        </div>
+                        <div class="column">
+                            <P style="font-size: 20px">Software:</P>
+                            <input type="checkbox" id="s1" value="s1"><label for="s1">Diagnosis</label><br>
+                            <input type="checkbox" id="s2" value="s2"><label for="s2">Installation</label><br>
+                            <input type="checkbox" id="s3" value="s3"><label for="s3">Virus Removal</label><br>
+                            <input type="checkbox" id="s4" value="s4"><label for="s4">Repair</label><br>
+                            <input type="checkbox" id="s5" value="s5"><label for="s5">Maintenance</label>
+                        </div>
+                    </div>
+                    <br><br>
+                    <input type="submit" value="Submit" style="margin-left: auto; margin-right: auto;">
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>

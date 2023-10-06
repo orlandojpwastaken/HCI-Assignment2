@@ -1,0 +1,77 @@
+body {
+    background: url(wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+h1 {
+
+    color:#fff;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h3 {
+    color:#fff;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+#intro {
+    color: #ffffff;
+    text-align: center;
+    align-content: center;    background-color: rgba(28, 86, 194, 0.3);
+    width: fit-content;
+    border: 2px solid rgb(90, 117, 205);
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+}
+#form {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #list1 {
+    text-align: center;
+    list-style: inside;
+  }
+
+  table, th,td {
+    background: rgba(66, 66, 66, 0.25);
+    border: 1px solid white;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse:collapse;
+    text-align: center;
+    width: 800px;
+}
+
+#personal{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    width: 30%;
+}
+
+#services{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    width: 80%;
+}
